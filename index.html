@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Untuk Hanna ❤️</title>
+<meta name="theme-color" content="#ff6f91">
+<style>
+:root{--pink:#ff6f91;--rose:#ff9fb5;--cream:#fff8f5;--dark:#351f28}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--dark);background:linear-gradient(135deg,#fff7f8,#ffeef3);overflow-x:hidden}
+section{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:60px 20px;position:relative}
+.card{max-width:760px;width:100%;background:rgba(255,255,255,.78);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.8);border-radius:30px;padding:36px;box-shadow:0 20px 60px rgba(160,60,90,.14);text-align:center}
+h1{font-size:clamp(42px,11vw,84px);margin:8px 0;color:#d9486d;line-height:1}
+h2{font-size:clamp(28px,6vw,46px);margin:10px 0 20px}
+p{font-size:18px;line-height:1.8}
+.small{opacity:.7;font-size:14px}
+.btn{border:0;border-radius:999px;padding:14px 24px;background:var(--pink);color:#fff;font-size:16px;font-weight:700;cursor:pointer;box-shadow:0 10px 25px rgba(255,111,145,.3);transition:.2s}
+.btn:hover{transform:translateY(-2px)}
+.heart{font-size:70px;animation:pulse 1.4s infinite}
+@keyframes pulse{50%{transform:scale(1.15)}}
+.fade{animation:fade 1.2s ease both}@keyframes fade{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.hidden{display:none}
+.reasons{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:25px}
+.reason{padding:20px;border-radius:20px;background:#fff1f4}
+.reason b{display:block;font-size:25px;margin-bottom:8px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:20px 0}
+.gallery div{aspect-ratio:1;border-radius:18px;background:linear-gradient(135deg,#ffd9e2,#fff);display:flex;align-items:center;justify-content:center;color:#9a6673;font-size:13px;padding:10px}
+.note{text-align:left;background:#fffafa;border-radius:22px;padding:25px;border-left:5px solid var(--pink)}
+.final{background:radial-gradient(circle at center,#ffdce5 0,#fff4f6 45%,#fff 100%)}
+.confetti{position:fixed;top:-20px;pointer-events:none;z-index:20;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
+.count{font-size:14px;margin:14px 0;color:#8b5c68}
+footer{text-align:center;padding:25px;color:#9a6875}
+</style>
+</head>
+<body>
+
+<section>
+  <div class="card fade">
+    <div class="heart">❤️</div>
+    <div class="small">29 September 2026</div>
+    <h1>Hanna</h1>
+    <p>Ada sesuatu kecil yang gue bikin khusus buat lo.</p>
+    <p class="small">Jangan langsung di-scroll. Buka pelan-pelan 😭</p>
+    <button class="btn" onclick="start()">Buka ❤️</button>
+  </div>
+</section>
+
+<section id="intro">
+  <div class="card fade">
+    <div class="small">HARI INI PUNYA SIAPA?</div>
+    <h2>Happy Birthday, Hanna 🎂</h2>
+    <p>Hari ini lo resmi nambah umur lagi. Dan entah kenapa gue pengen bikin sesuatu yang bisa lo simpan, bukan cuma ucapan yang lewat di chat.</p>
+    <p>Jadi... yaudah. Gue bikin ini buat lo. Sesederhana itu.</p>
+    <div class="count">24 tahun • 29 September 2002</div>
+    <button class="btn" onclick="document.querySelector('#letter').scrollIntoView()">Lanjut →</button>
+  </div>
+</section>
+
+<section id="letter">
+  <div class="card fade">
+    <div class="small">SEDIKIT DARI GUE</div>
+    <h2>Surat buat Hanna ❤️</h2>
+    <div class="note">
+      <p>Hanna syg,</p>
+      <p>Happy birthday yaa ❤️</p>
+      <p>Gue sebenernya bingung mau nulis apaan, tapi gue pengen lo tahu satu hal: gue bersyukur bisa kenal sama lo dan bisa punya lo di hidup gue.</p>
+      <p>Maaf kalau di ulang tahun lo kali ini gue belum bisa kasih sesuatu yang wah. Jujur gue pengen banget bisa bikin hari ini lebih spesial buat lo. Tapi walaupun gue belum bisa ngasih hadiah seperti yang gue mau, gue harap lo tetap tahu kalau lo berarti buat gue.</p>
+      <p>Gue mungkin gak selalu pinter nunjukin rasa sayang. Kadang lebih banyak becanda, kadang ngeselin, kadang bikin lo kesel juga wkwk. Tapi gue sayang sama lo, Hanna.</p>
+      <p>Semoga di umur lo yang baru ini, lo selalu sehat, bahagia, dimudahkan semua urusannya, rezekinya lancar, dan apa pun yang lagi lo perjuangin bisa tercapai satu-satu.</p>
+      <p>Dan semoga gue masih dikasih kesempatan buat nemenin lo di banyak ulang tahun berikutnya.</p>
+      <p><b>Happy birthday, Hanna syg. ❤️</b></p>
+    </div>
+    <button class="btn" onclick="document.querySelector('#reasons').scrollIntoView()">Masih ada lagi 😭</button>
+  </div>
+</section>
+
+<section id="reasons">
+  <div class="card fade">
+    <div class="small">SATU HAL YANG GUE MAU LO INGAT</div>
+    <h2>Lo itu spesial.</h2>
+    <p>Gue sengaja gak bikin daftar alasan yang terlalu dibuat-buat. Karena gue lebih pengen bagian ini nanti diisi sama hal-hal yang cuma kita berdua yang ngerti.</p>
+    <div class="reasons">
+      <div class="reason"><b>❤️</b>Hal kecil dari lo yang gue suka</div>
+      <div class="reason"><b>😂</b>Momen kita yang paling kocak</div>
+      <div class="reason"><b>🥹</b>Momen yang gak bakal gue lupain</div>
+    </div>
+    <p class="small">Tip: edit tiga kotak ini dengan cerita kalian sendiri supaya website-nya makin personal.</p>
+    <button class="btn" onclick="document.querySelector('#gallery').scrollIntoView()">Lihat kenangan 📸</button>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="card fade">
+    <div class="small">OUR LITTLE GALLERY</div>
+    <h2>Foto kita 📸</h2>
+    <div class="gallery">
+      <div>📷<br>Tambahkan foto 1</div>
+      <div>📷<br>Tambahkan foto 2</div>
+      <div>📷<br>Tambahkan foto 3</div>
+    </div>
+    <p class="small">Foto bisa ditambahkan nanti ke folder <b>foto</b> sesuai petunjuk di README.</p>
+    <button class="btn" onclick="document.querySelector('#surprise').scrollIntoView()">Buka hadiah terakhir 🎁</button>
+  </div>
+</section>
+
+<section id="surprise" class="final">
+  <div class="card fade">
+    <div class="heart">🎁</div>
+    <h2>Hadiah terakhir...</h2>
+    <p>Gue mungkin belum bisa kasih hadiah yang bisa dibungkus.</p>
+    <p>Tapi gue bisa kasih satu janji kecil:</p>
+    <p><b>selama gue masih bisa, gue bakal berusaha bikin lo ngerasa disayang, dihargai, dan gak sendirian.</b></p>
+    <p>Jadi sekarang tugas lo cuma satu...</p>
+    <h2>Bahagia hari ini ya, Hanna. ❤️</h2>
+    <p>Selamat ulang tahun, Hanna syg.</p>
+    <button class="btn" onclick="celebrate()">Klik kalau lo senyum 😭❤️</button>
+    <p id="after" class="hidden"><b>NAHHH KETAHUAN SENYUM 😭😂❤️</b></p>
+  </div>
+</section>
+
+<footer>Dibuat khusus untuk Hanna • 29.09.2026 ❤️</footer>
+
+<script>
+function start(){document.querySelector('#intro').scrollIntoView({behavior:'smooth'})}
+function celebrate(){
+  document.getElementById('after').classList.remove('hidden');
+  for(let i=0;i<70;i++){
+    const x=document.createElement('div'); x.className='confetti';
+    x.textContent=['❤️','💗','✨','🎉','🌸'][Math.floor(Math.random()*5)];
+    x.style.left=Math.random()*100+'vw';
+    x.style.fontSize=(14+Math.random()*20)+'px';
+    x.style.animationDuration=(2+Math.random()*3)+'s';
+    document.body.appendChild(x);
+    setTimeout(()=>x.remove(),5500);
+  }
+}
+</script>
+</body>
+</html>
