@@ -1,141 +1,889 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Untuk Hanna ❤️</title>
-<meta name="theme-color" content="#ff6f91">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Untuk Hannah ❤️</title>
+
 <style>
-:root{--pink:#ff6f91;--rose:#ff9fb5;--cream:#fff8f5;--dark:#351f28}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--dark);background:linear-gradient(135deg,#fff7f8,#ffeef3);overflow-x:hidden}
-section{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:60px 20px;position:relative}
-.card{max-width:760px;width:100%;background:rgba(255,255,255,.78);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.8);border-radius:30px;padding:36px;box-shadow:0 20px 60px rgba(160,60,90,.14);text-align:center}
-h1{font-size:clamp(42px,11vw,84px);margin:8px 0;color:#d9486d;line-height:1}
-h2{font-size:clamp(28px,6vw,46px);margin:10px 0 20px}
-p{font-size:18px;line-height:1.8}
-.small{opacity:.7;font-size:14px}
-.btn{border:0;border-radius:999px;padding:14px 24px;background:var(--pink);color:#fff;font-size:16px;font-weight:700;cursor:pointer;box-shadow:0 10px 25px rgba(255,111,145,.3);transition:.2s}
-.btn:hover{transform:translateY(-2px)}
-.heart{font-size:70px;animation:pulse 1.4s infinite}
-@keyframes pulse{50%{transform:scale(1.15)}}
-.fade{animation:fade 1.2s ease both}@keyframes fade{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
-.hidden{display:none}
-.reasons{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:25px}
-.reason{padding:20px;border-radius:20px;background:#fff1f4}
-.reason b{display:block;font-size:25px;margin-bottom:8px}
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:20px 0}
-.gallery div{aspect-ratio:1;border-radius:18px;background:linear-gradient(135deg,#ffd9e2,#fff);display:flex;align-items:center;justify-content:center;color:#9a6673;font-size:13px;padding:10px}
-.note{text-align:left;background:#fffafa;border-radius:22px;padding:25px;border-left:5px solid var(--pink)}
-.final{background:radial-gradient(circle at center,#ffdce5 0,#fff4f6 45%,#fff 100%)}
-.confetti{position:fixed;top:-20px;pointer-events:none;z-index:20;animation:fall linear forwards}
-@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
-.count{font-size:14px;margin:14px 0;color:#8b5c68}
-footer{text-align:center;padding:25px;color:#9a6875}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #fff0f5, #ffe1eb);
+    color: #40252d;
+    overflow-x: hidden;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 20px;
+}
+
+.card {
+    width: 100%;
+    max-width: 750px;
+    background: rgba(255,255,255,0.82);
+    backdrop-filter: blur(15px);
+    border-radius: 30px;
+    padding: 35px 25px;
+    box-shadow: 0 20px 60px rgba(180,70,100,0.15);
+    text-align: center;
+}
+
+.small {
+    font-size: 13px;
+    color: #a86b7b;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: clamp(55px, 15vw, 100px);
+    color: #e65379;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: clamp(30px, 7vw, 48px);
+    color: #d94b70;
+    margin: 12px 0 22px;
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin: 12px 0;
+}
+
+.heart {
+    font-size: 70px;
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+    0%,100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 50px;
+    background: #e95d82;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(233,93,130,0.3);
+}
+
+.btn:hover {
+    transform: scale(1.03);
+}
+
+.letter {
+    text-align: left;
+    background: #fff8fa;
+    padding: 25px;
+    border-radius: 22px;
+    border-left: 5px solid #e95d82;
+}
+
+.reason-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.reason {
+    background: #fff1f5;
+    border-radius: 20px;
+    padding: 22px 15px;
+}
+
+.reason-icon {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.reason p {
+    font-size: 15px;
+}
+
+.timeline {
+    text-align: left;
+    margin-top: 25px;
+}
+
+.timeline-item {
+    background: #fff6f8;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 20px;
+}
+
+.timeline-item h3 {
+    color: #d94b70;
+    margin-bottom: 8px;
+}
+
+.final {
+    background: radial-gradient(circle, #ffd8e4, #fff1f5 60%, #fff);
+}
+
+.final h2 {
+    font-size: clamp(35px, 9vw, 60px);
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #a86b7b;
+}
+
+.confetti {
+    position: fixed;
+    top: -20px;
+    z-index: 9999;
+    pointer-events: none;
+    animation: fall linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+.signature {
+    margin-top: 25px;
+    font-size: 20px;
+    color: #d94b70;
+    font-weight: bold;
+}
 </style>
 </head>
+
 <body>
 
+<!-- ========================= -->
+<!-- OPENING -->
+<!-- ========================= -->
+
 <section>
-  <div class="card fade">
-    <div class="heart">❤️</div>
-    <div class="small">29 September 2026</div>
-    <h1>Hanna</h1>
-    <p>Ada sesuatu kecil yang gue bikin khusus buat lo.</p>
-    <p class="small">Jangan langsung di-scroll. Buka pelan-pelan 😭</p>
-    <button class="btn" onclick="start()">Buka ❤️</button>
-  </div>
+    <div class="card">
+
+        <div class="heart">❤️</div>
+
+        <div class="small">
+            29 September 2026
+        </div>
+
+        <h1>Hanna</h1>
+
+        <p>
+            Aku punya sesuatu kecil buat kamu.
+        </p>
+
+        <p>
+            Bukan hadiah yang bisa dibungkus...
+            tapi semoga bisa jadi sesuatu yang kamu simpan.
+        </p>
+
+        <button class="btn" onclick="goTo('intro')">
+            Buka ❤️
+        </button>
+
+    </div>
 </section>
+
+
+<!-- ========================= -->
+<!-- INTRO -->
+<!-- ========================= -->
 
 <section id="intro">
-  <div class="card fade">
-    <div class="small">HARI INI PUNYA SIAPA?</div>
-    <h2>Happy Birthday, Hanna 🎂</h2>
-    <p>Hari ini lo resmi nambah umur lagi. Dan entah kenapa gue pengen bikin sesuatu yang bisa lo simpan, bukan cuma ucapan yang lewat di chat.</p>
-    <p>Jadi... yaudah. Gue bikin ini buat lo. Sesederhana itu.</p>
-    <div class="count">24 tahun • 29 September 2002</div>
-    <button class="btn" onclick="document.querySelector('#letter').scrollIntoView()">Lanjut →</button>
-  </div>
+
+    <div class="card">
+
+        <div class="small">
+            Hari spesial seseorang
+        </div>
+
+        <h2>
+            Happy Birthday, Nur Hannah Syafirah 🎂
+        </h2>
+
+        <p>
+            Hari ini kamu bertambah satu tahun lagi.
+        </p>
+
+        <p>
+            Dan aku cuma pengen jadi salah satu orang
+            yang bikin hari kamu terasa sedikit lebih spesial.
+        </p>
+
+        <p>
+            Jadi sebelum kamu lanjut,
+            baca sampai akhir ya sayang.
+        </p>
+
+        <p>
+            Jangan curang, jangan langsung loncat 😭
+        </p>
+
+        <button class="btn" onclick="goTo('letter')">
+            Lanjut ❤️
+        </button>
+
+    </div>
+
 </section>
+
+
+<!-- ========================= -->
+<!-- SURAT -->
+<!-- ========================= -->
 
 <section id="letter">
-  <div class="card fade">
-    <div class="small">SEDIKIT DARI GUE</div>
-    <h2>Surat buat Hanna ❤️</h2>
-    <div class="note">
-      <p>Hanna syg,</p>
-      <p>Happy birthday yaa ❤️</p>
-      <p>Gue sebenernya bingung mau nulis apaan, tapi gue pengen lo tahu satu hal: gue bersyukur bisa kenal sama lo dan bisa punya lo di hidup gue.</p>
-      <p>Maaf kalau di ulang tahun lo kali ini gue belum bisa kasih sesuatu yang wah. Jujur gue pengen banget bisa bikin hari ini lebih spesial buat lo. Tapi walaupun gue belum bisa ngasih hadiah seperti yang gue mau, gue harap lo tetap tahu kalau lo berarti buat gue.</p>
-      <p>Gue mungkin gak selalu pinter nunjukin rasa sayang. Kadang lebih banyak becanda, kadang ngeselin, kadang bikin lo kesel juga wkwk. Tapi gue sayang sama lo, Hanna.</p>
-      <p>Semoga di umur lo yang baru ini, lo selalu sehat, bahagia, dimudahkan semua urusannya, rezekinya lancar, dan apa pun yang lagi lo perjuangin bisa tercapai satu-satu.</p>
-      <p>Dan semoga gue masih dikasih kesempatan buat nemenin lo di banyak ulang tahun berikutnya.</p>
-      <p><b>Happy birthday, Hanna syg. ❤️</b></p>
+
+    <div class="card">
+
+        <div class="small">
+            Dari aku untuk kamu
+        </div>
+
+        <h2>
+            Surat kecil buat Hanna ❤️
+        </h2>
+
+        <div class="letter">
+
+            <p>
+                <b>Hanna syg,</b>
+            </p>
+
+            <p>
+                Happy birthday yaa ❤️
+            </p>
+
+            <p>
+                Aku sebenarnya bingung mau mulai dari mana.
+                Banyak yang pengen aku bilang, tapi kalau ditulis
+                semuanya kayaknya malah jadi panjang banget wkwk.
+            </p>
+
+            <p>
+                Yang jelas, aku bersyukur banget bisa kenal sama kamu.
+                Dari sekian banyak orang yang bisa aku temui,
+                entah kenapa akhirnya kamu yang sampai sekarang
+                masih ada di hidup aku walaupun kadang ada aja gebrakan kecil nya😒.
+            </p>
+
+            <p>
+                Kita ketemu secara virtual.
+                Sampai sekarang pun kita belum pernah ketemu langsung.
+                Kita cuma bisa saling kenal lewat layar,
+                lewat chat, call, cerita, dan waktu yang kita luangkan
+                buat satu sama lain.
+            </p>
+
+            <p>
+                Tapi anehnya, dari semua itu aku bisa punya rasa
+                yang sebesar ini sama kamu.
+            </p>
+
+            <p>
+                Aku masih ingat dulu kamu sering banget
+                luangin waktu buat aku.
+                Kita bisa call lama, ngobrol tentang apa aja,
+                bahkan kadang gak ada topik pun tetap betah.
+            </p>
+
+            <p>
+                Sekarang mungkin keadaan kita gak selalu seperti dulu.
+                Kita gak sesering dulu buat call, game bareng dll,
+                dan mungkin waktu yang kita punya juga gak sebanyak dulu.
+            </p>
+
+            <p>
+                Tapi aku gak mau menganggap itu sebagai alasan
+                buat melupakan semua yang sudah kita lewati.
+            </p>
+
+            <p>
+                Karena satu hal yang aku syukuri sampai sekarang:
+                <b>kamu masih ada.</b>
+            </p>
+
+            <p>
+                Komunikasi kita masih ada.
+                Kamu masih mau menerima aku dengan segala kurang
+                dan lebihnya.
+                Dan kamu masih jadi seseorang yang aku sayang.
+            </p>
+
+            <p>
+                Aku juga masih punya satu hal yang aku tunggu.
+            </p>
+
+            <p>
+                <b>Hari dimana akhirnya aku bisa ketemu kamu secara langsung.</b>
+            </p>
+
+            <p>
+                Kamu mau nunggu aku sampai aku selesai kuliah dan dapat kerjaan.
+                Dan aku berharap ketika waktunya tiba nanti,
+                semua penantian itu punya cerita yang indah.
+            </p>
+
+            <p>
+                Aku gak tahu perjalanan kita nanti bakal seperti apa.
+                Aku juga gak bisa menjanjikan semuanya akan selalu mudah.
+            </p>
+
+            <p>
+                Tapi untuk sekarang,
+                aku cuma mau bilang:
+            </p>
+
+            <p>
+                <b>
+                    Terima kasih sudah tetap ada, hannah.
+                </b>
+            </p>
+
+            <p>
+                Aku gak pernah nyangka bisa menemukan seseorang
+                yang menurut aku secantik kamu,
+                sebaik kamu,
+                dan masih mau menerima aku apa adanya.
+            </p>
+
+            <p>
+                Walaupun kamu kadang keras kepala
+                dan bikin aku geleng-geleng kepala sendiri 😭,
+                entah kenapa aku tetap suka kamu.
+            </p>
+
+            <p>
+                Aku bahkan gak tahu harus menjelaskan alasannya
+                seperti apa.
+            </p>
+
+            <p>
+                Aku cuma tahu...
+            </p>
+
+            <p>
+                <b>
+                    Aku bersyukur kamu ada di hidup aku. ❤️
+                </b>
+            </p>
+
+        </div>
+
+        <button class="btn" onclick="goTo('reasons')">
+            Masih ada lagi 😭❤️
+        </button>
+
     </div>
-    <button class="btn" onclick="document.querySelector('#reasons').scrollIntoView()">Masih ada lagi 😭</button>
-  </div>
+
 </section>
+
+
+<!-- ========================= -->
+<!-- ALASAN -->
+<!-- ========================= -->
 
 <section id="reasons">
-  <div class="card fade">
-    <div class="small">SATU HAL YANG GUE MAU LO INGAT</div>
-    <h2>Lo itu spesial.</h2>
-    <p>Gue sengaja gak bikin daftar alasan yang terlalu dibuat-buat. Karena gue lebih pengen bagian ini nanti diisi sama hal-hal yang cuma kita berdua yang ngerti.</p>
-    <div class="reasons">
-      <div class="reason"><b>❤️</b>Hal kecil dari lo yang gue suka</div>
-      <div class="reason"><b>😂</b>Momen kita yang paling kocak</div>
-      <div class="reason"><b>🥹</b>Momen yang gak bakal gue lupain</div>
+
+    <div class="card">
+
+        <div class="small">
+            Sedikit alasan
+        </div>
+
+        <h2>
+            Kenapa aku sayang kamu ❤️
+        </h2>
+
+        <p>
+            Aku gak punya daftar alasan yang sempurna.
+            Tapi ada beberapa hal tentang kamu yang selalu aku syukuri.
+        </p>
+
+        <div class="reason-container">
+
+            <div class="reason">
+
+                <div class="reason-icon">
+                    ❤️
+                </div>
+
+                <b>
+                    Karena kamu menerima aku
+                </b>
+
+                <p>
+                    Kamu tetap mau menerima aku
+                    dengan segala kurang dan lebihnya.
+                </p>
+
+            </div>
+
+
+            <div class="reason">
+
+                <div class="reason-icon">
+                    🫶
+                </div>
+
+                <b>
+                    Karena kamu pernah meluangkan waktu
+                </b>
+
+                <p>
+                    Aku gak lupa waktu-waktu
+                    ketika kamu rela meluangkan banyak waktu
+                    cuma buat ngobrol sama aku.
+                </p>
+
+            </div>
+
+
+            <div class="reason">
+
+                <div class="reason-icon">
+                    🌙
+                </div>
+
+                <b>
+                    Karena kamu masih bertahan
+                </b>
+
+                <p>
+                    Walaupun kita belum pernah bertemu langsung,
+                    kamu masih memilih untuk tetap ada.
+                </p>
+
+            </div>
+
+
+            <div class="reason">
+
+                <div class="reason-icon">
+                    😂
+                </div>
+
+                <b>
+                    Karena kamu keras kepala
+                </b>
+
+                <p>
+                    Kadang bikin aku kesel,
+                    tapi entah kenapa justru itu juga
+                    yang bikin aku makin kenal sama kamu.
+                </p>
+
+            </div>
+
+
+            <div class="reason">
+
+                <div class="reason-icon">
+                    🥹
+                </div>
+
+                <b>
+                    Karena kamu adalah kamu
+                </b>
+
+                <p>
+                    Aku gak butuh alasan yang terlalu rumit.
+                    Aku suka kamu karena kamu adalah kamu.
+                </p>
+
+            </div>
+
+
+            <div class="reason">
+
+                <div class="reason-icon">
+                    ❤️
+                </div>
+
+                <b>
+                    Karena aku bersyukur
+                </b>
+
+                <p>
+                    Dari semua kemungkinan yang ada,
+                    aku bersyukur salah satunya membawa aku
+                    sampai bertemu kamu.
+                </p>
+
+            </div>
+
+        </div>
+
+        <button class="btn" onclick="goTo('story')">
+            Tentang kita 🌙
+        </button>
+
     </div>
-    <p class="small">Tip: edit tiga kotak ini dengan cerita kalian sendiri supaya website-nya makin personal.</p>
-    <button class="btn" onclick="document.querySelector('#gallery').scrollIntoView()">Lihat kenangan 📸</button>
-  </div>
+
 </section>
 
-<section id="gallery">
-  <div class="card fade">
-    <div class="small">OUR LITTLE GALLERY</div>
-    <h2>Foto kita 📸</h2>
-    <div class="gallery">
-      <div>📷<br>Tambahkan foto 1</div>
-      <div>📷<br>Tambahkan foto 2</div>
-      <div>📷<br>Tambahkan foto 3</div>
+
+<!-- ========================= -->
+<!-- CERITA KALIAN -->
+<!-- ========================= -->
+
+<section id="story">
+
+    <div class="card">
+
+        <div class="small">
+            Our little story
+        </div>
+
+        <h2>
+            Tentang kita 🌙
+        </h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <h3>
+                    Kita bertemu secara virtual 💻
+                </h3>
+
+                <p>
+                    Lucu ya kalau dipikir-pikir.
+                    Kita bahkan belum pernah bertemu langsung,
+                    tapi dari sebuah pertemuan virtual,
+                    kita bisa sampai sejauh ini.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <h3>
+                    Dulu kita punya banyak waktu ❤️
+                </h3>
+
+                <p>
+                    Ada masa dimana kamu sering meluangkan
+                    banyak waktu buat aku.
+                    Kita ngobrol, call,
+                    dan menghabiskan waktu bersama
+                    walaupun cuma lewat layar.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <h3>
+                    Sekarang mungkin berbeda 🌧️
+                </h3>
+
+                <p>
+                    Sekarang mungkin kita gak sesering dulu.
+                    Kadang waktu buat call juga gak sebanyak dulu.
+                    Tapi aku tetap menghargai setiap komunikasi
+                    yang masih kita punya.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <h3>
+                    Ada satu hal yang masih aku tunggu 🥹
+                </h3>
+
+                <p>
+                    Suatu hari nanti,
+                    setelah aku menyelesaikan kuliahku,
+                    aku pengen kita akhirnya ketemu.
+                </p>
+
+                <p>
+                    Bukan lagi lewat layar.
+                    Bukan lagi lewat chat.
+                    Tapi benar-benar bertemu kamu.
+                </p>
+
+            </div>
+
+        </div>
+
+        <button class="btn" onclick="goTo('future')">
+            Untuk masa depan kita ❤️
+        </button>
+
     </div>
-    <p class="small">Foto bisa ditambahkan nanti ke folder <b>foto</b> sesuai petunjuk di README.</p>
-    <button class="btn" onclick="document.querySelector('#surprise').scrollIntoView()">Buka hadiah terakhir 🎁</button>
-  </div>
+
 </section>
 
-<section id="surprise" class="final">
-  <div class="card fade">
-    <div class="heart">🎁</div>
-    <h2>Hadiah terakhir...</h2>
-    <p>Gue mungkin belum bisa kasih hadiah yang bisa dibungkus.</p>
-    <p>Tapi gue bisa kasih satu janji kecil:</p>
-    <p><b>selama gue masih bisa, gue bakal berusaha bikin lo ngerasa disayang, dihargai, dan gak sendirian.</b></p>
-    <p>Jadi sekarang tugas lo cuma satu...</p>
-    <h2>Bahagia hari ini ya, Hanna. ❤️</h2>
-    <p>Selamat ulang tahun, Hanna syg.</p>
-    <button class="btn" onclick="celebrate()">Klik kalau lo senyum 😭❤️</button>
-    <p id="after" class="hidden"><b>NAHHH KETAHUAN SENYUM 😭😂❤️</b></p>
-  </div>
+
+<!-- ========================= -->
+<!-- MASA DEPAN -->
+<!-- ========================= -->
+
+<section id="future">
+
+    <div class="card">
+
+        <div class="heart">
+            🥹
+        </div>
+
+        <div class="small">
+            Satu harapan
+        </div>
+
+        <h2>
+            Sampai akhirnya kita bertemu
+        </h2>
+
+        <p>
+            Hannah, aku tahu perjalanan kita masih panjang.
+        </p>
+
+        <p>
+            Aku masih punya kuliah yang harus aku selesaikan.
+            Kamu juga punya kehidupan dan kesibukan kamu sendiri.
+        </p>
+
+        <p>
+            Mungkin akan ada hari dimana kita sibuk.
+            Mungkin ada hari dimana kita gak bisa
+            ngobrol selama yang kita mau.
+        </p>
+
+        <p>
+            Tapi aku harap,
+            di tengah semua itu,
+            kita tetap bisa saling menemukan jalan
+            untuk tetap ada satu sama lain.
+        </p>
+
+        <p>
+            Dan nanti...
+        </p>
+
+        <p>
+            <b>
+                aku pengen hari pertama kita bertemu
+                jadi salah satu hari yang paling aku ingat.
+            </b>
+        </p>
+
+        <button class="btn" onclick="goTo('final')">
+            Ada satu hal terakhir 🎁
+        </button>
+
+    </div>
+
 </section>
 
-<footer>Dibuat khusus untuk Hanna • 29.09.2026 ❤️</footer>
+
+<!-- ========================= -->
+<!-- FINAL -->
+<!-- ========================= -->
+
+<section id="final" class="final">
+
+    <div class="card">
+
+        <div class="heart">
+            🎁
+        </div>
+
+        <div class="small">
+            Hadiah terakhir
+        </div>
+
+        <h2>
+            Untuk kamu, Hanna ❤️
+        </h2>
+
+        <p>
+            Aku mungkin belum bisa memberikan
+            hadiah yang besar buat kamu hari ini.
+        </p>
+
+        <p>
+            Tapi aku ingin kamu tahu satu hal.
+        </p>
+
+        <p>
+            <b>
+                Aku menghargai kamu.
+            </b>
+        </p>
+
+        <p>
+            Aku menghargai waktu yang pernah kamu berikan.
+            Aku menghargai semua cerita kita.
+            Aku menghargai kesabaran kamu.
+            Dan aku menghargai karena sampai sekarang
+            kamu masih ada.
+        </p>
+
+        <p>
+            Semoga di umur kamu yang baru,
+            kamu selalu sehat,
+            selalu bahagia,
+            dimudahkan dalam segala urusan,
+            rezekinya dilancarkan,
+            dan semua hal yang kamu perjuangkan
+            bisa tercapai satu per satu.
+        </p>
+
+        <p>
+            Jangan lupa bahagia ya sayang.
+        </p>
+
+        <p>
+            Dan kalau suatu hari nanti kamu merasa
+            perjalanan ini terlalu panjang,
+            semoga kamu ingat bahwa
+            ada seseorang di sini yang masih menunggu
+            hari dimana akhirnya bisa melihat kamu
+            bukan dari layar.
+        </p>
+
+        <h2>
+            Selamat ulang tahun, Hannah. ❤️
+        </h2>
+
+        <p>
+            Semoga ini bukan cuma ulang tahun
+            yang aku ucapkan lewat website.
+        </p>
+
+        <p>
+            Semoga suatu hari nanti,
+            aku bisa mengucapkannya langsung
+            di depan kamu.
+        </p>
+
+        <p class="signature">
+            Aku sayang kamu. ❤️
+        </p>
+
+        <button class="btn" onclick="celebrate()">
+            Klik kalau kamu senyum 😭❤️
+        </button>
+
+        <p id="surprise" class="hidden">
+            <br>
+            NAHHH KETAHUAN SENYUM 😭😂❤️
+            <br><br>
+            Happy birthday sekali lagi, sayang.
+        </p>
+
+    </div>
+
+</section>
+
+
+<footer>
+    Dibuat khusus untuk Hanna ❤️
+    <br>
+    29 September 2026
+</footer>
+
 
 <script>
-function start(){document.querySelector('#intro').scrollIntoView({behavior:'smooth'})}
-function celebrate(){
-  document.getElementById('after').classList.remove('hidden');
-  for(let i=0;i<70;i++){
-    const x=document.createElement('div'); x.className='confetti';
-    x.textContent=['❤️','💗','✨','🎉','🌸'][Math.floor(Math.random()*5)];
-    x.style.left=Math.random()*100+'vw';
-    x.style.fontSize=(14+Math.random()*20)+'px';
-    x.style.animationDuration=(2+Math.random()*3)+'s';
-    document.body.appendChild(x);
-    setTimeout(()=>x.remove(),5500);
-  }
+
+function goTo(id) {
+
+    document.getElementById(id).scrollIntoView({
+        behavior: "smooth"
+    });
+
 }
+
+
+function celebrate() {
+
+    document.getElementById("surprise").classList.remove("hidden");
+
+    const emojis = [
+        "❤️",
+        "💗",
+        "💖",
+        "✨",
+        "🎉",
+        "🌸",
+        "💕"
+    ];
+
+    for (let i = 0; i < 80; i++) {
+
+        const confetti = document.createElement("div");
+
+        confetti.className = "confetti";
+
+        confetti.innerText =
+            emojis[Math.floor(Math.random() * emojis.length)];
+
+        confetti.style.left =
+            Math.random() * 100 + "vw";
+
+        confetti.style.fontSize =
+            (15 + Math.random() * 20) + "px";
+
+        confetti.style.animationDuration =
+            (2 + Math.random() * 3) + "s";
+
+        document.body.appendChild(confetti);
+
+        setTimeout(() => {
+
+            confetti.remove();
+
+        }, 6000);
+
+    }
+
+}
+
 </script>
+
 </body>
 </html>
